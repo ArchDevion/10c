@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>3 Buttons mit Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="openLink('https://drive.google.com/file/d/16ejYHy8MEp2pk0q2fAwWn9gtqBygAMqH/view?usp=drive_link')">Button 1</button>
+    <button onclick="openLink('https://docs.google.com/spreadsheets/d/10povptYHGXgtJpI7sl_1QlLyDlHmQbTOZgwkdgaSeWs/edit')">Button 2</button>
+    <button onclick="openLink('https://docs.google.com/spreadsheets/d/113YDGCWehkAk-R1ItBITHC3NdQKK7dwIkvOFt6guWpk/edit')">Button 3</button>
+
+    <script>
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
